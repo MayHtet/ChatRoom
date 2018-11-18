@@ -3,20 +3,46 @@ package com.example.mizuki.chatroomapplication.data.model;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
 
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 
+<<<<<<< HEAD
+=======
+=======
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 
 public class AppModel extends AndroidViewModel {
     public AppModel(@NonNull Application application) {
