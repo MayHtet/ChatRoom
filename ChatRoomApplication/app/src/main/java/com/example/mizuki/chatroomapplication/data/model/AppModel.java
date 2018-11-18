@@ -5,11 +5,14 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
 
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
+<<<<<<< Updated upstream:ChatRoomApplication/app/src/main/java/com/example/mizuki/chatroomapplication/data/model/AppModel.java
 <<<<<<< HEAD:ChatRoomApplication/app/src/main/java/com/example/mizuki/chatroomapplication/AppModel.java
 =======
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 >>>>>>> master:ChatRoomApplication/app/src/main/java/com/example/mizuki/chatroomapplication/data/model/AppModel.java
+=======
+>>>>>>> Stashed changes:ChatRoomApplication/app/src/main/java/com/example/mizuki/chatroomapplication/AppModel.java
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
