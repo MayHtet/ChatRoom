@@ -6,6 +6,10 @@ import android.support.annotation.NonNull;
 
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
 <<<<<<< HEAD
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+=======
+<<<<<<< HEAD
 
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
@@ -13,6 +17,7 @@ import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 =======
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+>>>>>>> master
 >>>>>>> master
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
