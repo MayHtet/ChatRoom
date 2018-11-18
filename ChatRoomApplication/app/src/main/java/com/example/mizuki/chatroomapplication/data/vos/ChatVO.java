@@ -1,5 +1,5 @@
 
-package com.example.mizuki.chatroomapplication;
+package com.example.mizuki.chatroomapplication.data.vos;
 
 import java.util.List;
 

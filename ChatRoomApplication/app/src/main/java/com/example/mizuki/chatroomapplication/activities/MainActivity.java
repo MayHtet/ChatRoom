@@ -1,7 +1,9 @@
-package com.example.mizuki.chatroomapplication;
+package com.example.mizuki.chatroomapplication.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.mizuki.chatroomapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 
