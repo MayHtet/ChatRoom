@@ -16,6 +16,7 @@ import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 
 public class MainActivity extends BaseActivity {
@@ -36,6 +37,12 @@ public class MainActivity extends BaseActivity {
 
             }
         });
+    }
+
+    @OnClick(R.id.btn_send)
+    public void onTabButton(){
+        String message = etMessage.getText().toString();
+
 
     }
     private void setupRecyclerView(List<ChatRoom> chatList) {

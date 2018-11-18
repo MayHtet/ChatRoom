@@ -8,6 +8,20 @@ import android.util.Log;
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+<<<<<<< HEAD
+=======
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+>>>>>>> master
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,7 +45,6 @@ public class AppModel extends AndroidViewModel {
                     ChatRoom chatRoom = chatDSS.getValue(ChatRoom.class);
                     if(chatRoom.getDelete().equals("0"))
                     chatArrayList.add(chatRoom);
-
                 }
                 chatListCallBack.loadChatList(chatArrayList);
 
@@ -47,11 +60,10 @@ public class AppModel extends AndroidViewModel {
     }
     public void startUploadChatMessage(ChatRoom chatRoom){
 
-        getChildDBR().child(String.valueOf(new Date().getTime())).setValue(chatRoom);
+        getChildDBR().child(chatRoom.getCreatetime()).setValue(chatRoom);
     }
 
     public void deleteChatMessage(ChatRoom chatRoom){
-
 
         ChatRoom newChatRoom = new ChatRoom();
         newChatRoom.setDate(chatRoom.getDate());
