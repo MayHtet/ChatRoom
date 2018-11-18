@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.mizuki.chatroomapplication.R;
@@ -57,8 +58,7 @@ public class MainActivity extends BaseActivity {
     private void setupRecyclerView(List<ChatRoom> chatList) {
 
        ChatRecyclerAdapter chatRecyclerAdapter = new ChatRecyclerAdapter(this);
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
-        rvChatRoom.setLayoutManager(staggeredGridLayoutManager);
+        rvChatRoom.setLayoutManager(new LinearLayoutManager(this));
         rvChatRoom.setAdapter(chatRecyclerAdapter);
         chatRecyclerAdapter.setmDataList(chatList);
     }
