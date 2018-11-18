@@ -44,7 +44,7 @@ public class MainActivity extends BaseActivity {
     @OnClick(R.id.btn_send)
     public void onTabButton(){
         ChatRoom chatRoom = new ChatRoom();
-        chatRoom.setMessage(etMessage.getText().toString(););
+        chatRoom.setMessage(etMessage.getText().toString());
         
         SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd");//dd/MM/yyyy
         Date now = new Date();
