@@ -24,7 +24,7 @@ public class ChatViewHolder extends BaseViewHolder<ChatRoom>  {
 
     @Override
     public void bind(Context context) {
-        tvMessage.setText(mData.getDate());
+        tvMessage.setText(mData.getMessage());
         tvDate.setText(mData.getDate());
     }
 
