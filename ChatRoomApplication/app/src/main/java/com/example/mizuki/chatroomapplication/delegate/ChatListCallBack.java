@@ -1,4 +1,6 @@
-package com.example.mizuki.chatroomapplication;
+package com.example.mizuki.chatroomapplication.delegate;
+
+import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
 
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
 
