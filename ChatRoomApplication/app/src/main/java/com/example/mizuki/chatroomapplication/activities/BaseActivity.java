@@ -16,11 +16,20 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayout());
+
+        if(getActionBar() != null ){
+            getActionBar().setDisplayHomeAsUpEnabled(setDisplayHomeEnabled());
+        }
         ButterKnife.bind(this,this);
 
         mAppModel = ViewModelProviders.of(this).get(AppModel.class);
     }
 
+    protected abstract boolean setDisplayHomeEnabled();
+
     public abstract int getLayout();
 
+    public AppModel getmAppModel() {
+        return mAppModel;
+    }
 }
