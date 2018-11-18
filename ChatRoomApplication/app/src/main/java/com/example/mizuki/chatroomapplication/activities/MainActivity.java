@@ -46,6 +46,7 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
     public void onTabButton(){
         ChatRoom chatRoom = new ChatRoom();
         chatRoom.setMessage(etMessage.getText().toString());
+        etMessage.setText("");
         
         SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd");//dd/MM/yyyy
         Date now = new Date();

@@ -8,6 +8,41 @@ import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+
+import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
+>>>>>>> master
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,12 +63,12 @@ public class AppModel extends AndroidViewModel {
                 ArrayList<ChatRoom> chatArrayList = new ArrayList<>();
                 for (DataSnapshot chatDSS:dataSnapshot.getChildren()
                      ) {
-                    Log.e("dataSnapshot size is ",(chatDSS == null)+"");
+
                     ChatRoom chatRoom = chatDSS.getValue(ChatRoom.class);
                     if(chatRoom.getDelete() == 0)
                     chatArrayList.add(chatRoom);
                 }
-                Log.e("Arraylist size is ",chatArrayList.size()+"");
+
                 chatListCallBack.loadChatList(chatArrayList);
 
             }
