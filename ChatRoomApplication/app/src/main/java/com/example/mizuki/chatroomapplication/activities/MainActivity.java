@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.mizuki.chatroomapplication.R;
 import com.example.mizuki.chatroomapplication.adapters.ChatRecyclerAdapter;
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
+import com.example.mizuki.chatroomapplication.delegate.ChatDeleteCallback;
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 
 import java.text.SimpleDateFormat;
@@ -21,7 +22,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements ChatDeleteCallback{
     @BindView(R.id.rv_chat_room)
     RecyclerView rvChatRoom;
     @BindView(R.id.et_message)
@@ -57,7 +58,7 @@ public class MainActivity extends BaseActivity {
 
     private void setupRecyclerView(List<ChatRoom> chatList) {
 
-       ChatRecyclerAdapter chatRecyclerAdapter = new ChatRecyclerAdapter(this);
+       ChatRecyclerAdapter chatRecyclerAdapter = new ChatRecyclerAdapter(this, this);
         rvChatRoom.setLayoutManager(new LinearLayoutManager(this));
         rvChatRoom.setAdapter(chatRecyclerAdapter);
         chatRecyclerAdapter.setmDataList(chatList);
@@ -72,5 +73,10 @@ public class MainActivity extends BaseActivity {
     @Override
     public int getLayout() {
         return R.layout.activity_main;
+    }
+
+    @Override
+    public void deleteChat(ChatRoom chatRoom) {
+        getmAppModel().deleteChatMessage(chatRoom);
     }
 }
