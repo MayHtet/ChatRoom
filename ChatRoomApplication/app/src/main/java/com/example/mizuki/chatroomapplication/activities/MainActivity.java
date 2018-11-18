@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity {
         Date now = new Date();
         String strDate = sdfDate.format(now);
         chatRoom.setDate(strDate);
-        chatRoom.setCreatetime(String.valueOf(new Date().getTime()));]
+        chatRoom.setCreatetime(String.valueOf(new Date().getTime()));
         chatRoom.setDelete(Long.valueOf(0));
         getmAppModel().startUploadChatMessage(chatRoom);
     }
