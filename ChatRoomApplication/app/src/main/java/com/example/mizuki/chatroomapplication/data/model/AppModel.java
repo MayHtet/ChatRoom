@@ -9,40 +9,13 @@ import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 
-<<<<<<< HEAD
-=======
-=======
-import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
-import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
-import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
-import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
-import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
-import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-
-import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
-import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
->>>>>>> master
->>>>>>> master
->>>>>>> master
->>>>>>> master
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 
 public class AppModel extends AndroidViewModel {
     public AppModel(@NonNull Application application) {
@@ -56,12 +29,12 @@ public class AppModel extends AndroidViewModel {
                 ArrayList<ChatRoom> chatArrayList = new ArrayList<>();
                 for (DataSnapshot chatDSS:dataSnapshot.getChildren()
                      ) {
-                    Log.e("dataSnapshot size is ",(chatDSS == null)+"");
+
                     ChatRoom chatRoom = chatDSS.getValue(ChatRoom.class);
                     if(chatRoom.getDelete() == 0)
                     chatArrayList.add(chatRoom);
                 }
-                Log.e("Arraylist size is ",chatArrayList.size()+"");
+
                 chatListCallBack.loadChatList(chatArrayList);
 
             }
