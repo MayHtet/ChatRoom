@@ -5,11 +5,10 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
 
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
-<<<<<<< HEAD:ChatRoomApplication/app/src/main/java/com/example/mizuki/chatroomapplication/AppModel.java
-=======
+
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
->>>>>>> master:ChatRoomApplication/app/src/main/java/com/example/mizuki/chatroomapplication/data/model/AppModel.java
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -53,5 +52,7 @@ public class AppModel extends AndroidViewModel {
         DatabaseReference noteChildDBR  = noteDBR.child(NetworkConstant.CHAT_MESSAGE);
         noteChildDBR.child(String.valueOf(new Date().getTime())).setValue(chatRoom);
     }
+
+
 
 }
