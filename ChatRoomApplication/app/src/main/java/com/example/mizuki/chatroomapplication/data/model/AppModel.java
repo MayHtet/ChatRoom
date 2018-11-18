@@ -5,26 +5,17 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
 
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-=======
-<<<<<<< HEAD
->>>>>>> master
+
 
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-<<<<<<< HEAD
 
-=======
->>>>>>> master
->>>>>>> master
->>>>>>> master
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -65,7 +56,7 @@ public class AppModel extends AndroidViewModel {
     }
     public void startUploadChatMessage(ChatRoom chatRoom){
 
-        getChildDBR().child(String.valueOf(new Date().getTime())).setValue(chatRoom);
+        getChildDBR().child(chatRoom.getCreatetime()).setValue(chatRoom);
     }
 
     public void deleteChatMessage(ChatRoom chatRoom){
