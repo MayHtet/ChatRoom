@@ -1,0 +1,38 @@
+
+package com.example.mizuki.chatroomapplication;
+
+@SuppressWarnings("unused")
+public class ChatRoom {
+
+
+    private String date;
+
+    private Long delete;
+
+    private String message;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public Long getDelete() {
+        return delete;
+    }
+
+    public void setDelete(Long delete) {
+        this.delete = delete;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+}
