@@ -15,6 +15,8 @@ import butterknife.BindView;
 public class ChatViewHolder extends BaseViewHolder<ChatRoom>  {
     @BindView(R.id.tv_message)
     TextView tvMessage;
+    @BindView(R.id.tv_date)
+    TextView tvDate;
 
     public ChatViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -23,6 +25,7 @@ public class ChatViewHolder extends BaseViewHolder<ChatRoom>  {
     @Override
     public void bind(Context context) {
         tvMessage.setText(mData.getDate());
+        tvDate.setText(mData.getDate());
     }
 
     @Override

@@ -21,5 +21,4 @@ public class ChatRecyclerAdapter<E extends BaseViewHolder> extends BaseRecyclerA
         return new ChatViewHolder(layoutInflater.inflate(R.layout.item_view_chat_room,viewGroup,false));
     }
 
-
 }
