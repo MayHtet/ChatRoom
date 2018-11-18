@@ -4,6 +4,7 @@ package com.example.mizuki.chatroomapplication.data.vos;
 @SuppressWarnings("unused")
 public class ChatRoom {
 
+    private  String createtime;
 
     private String date;
 
@@ -35,4 +36,11 @@ public class ChatRoom {
         this.message = message;
     }
 
+    public String getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(String createtime) {
+        this.createtime = createtime;
+    }
 }
