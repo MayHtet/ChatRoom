@@ -5,55 +5,19 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
 
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
-<<<<<<< HEAD
-
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-
-=======
-<<<<<<< HEAD
-
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-
-=======
-<<<<<<< HEAD
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-=======
-<<<<<<< HEAD
->>>>>>> master
->>>>>>> master
->>>>>>> master
->>>>>>> master
-
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> master
->>>>>>> master
->>>>>>> master
->>>>>>> master
->>>>>>> master
->>>>>>> master
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -78,7 +42,6 @@ public class AppModel extends AndroidViewModel {
                     ChatRoom chatRoom = chatDSS.getValue(ChatRoom.class);
                     if(chatRoom.getDelete().equals("0"))
                     chatArrayList.add(chatRoom);
-
                 }
                 chatListCallBack.loadChatList(chatArrayList);
 
@@ -98,7 +61,6 @@ public class AppModel extends AndroidViewModel {
     }
 
     public void deleteChatMessage(ChatRoom chatRoom){
-
 
         ChatRoom newChatRoom = new ChatRoom();
         newChatRoom.setDate(chatRoom.getDate());
