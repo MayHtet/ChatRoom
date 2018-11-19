@@ -3,6 +3,10 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 import com.google.firebase.database.DataSnapshot;
@@ -58,7 +62,7 @@ public class AppModel extends AndroidViewModel {
         getChildDBR().child(chatRoom.getCreatetime()).setValue(newChatRoom);
     }
 
-public DatabaseReference getChildDBR(){
+  DatabaseReference getChildDBR(){
 
     DatabaseReference chatDBR = FirebaseDatabase.getInstance().getReference();
     DatabaseReference chatChildDBR  = chatDBR.child(NetworkConstant.CHAT_MESSAGE);
