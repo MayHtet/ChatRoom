@@ -13,6 +13,7 @@ import com.example.mizuki.chatroomapplication.adapters.ChatRecyclerAdapter;
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
 import com.example.mizuki.chatroomapplication.delegate.ChatDeleteCallback;
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
+import com.example.mizuki.chatroomapplication.utils.AlertDialogBuilder;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -36,8 +37,11 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
             @Override
             public void loadChatList(List<ChatRoom> chatRoomList) {
                 setupRecyclerView(chatRoomList);
-                Toast.makeText(MainActivity.this,"Size is "+chatRoomList.size(),Toast.LENGTH_SHORT).show();
+<<<<<<< HEAD
+=======
+                //Toast.makeText(MainActivity.this,"Size is "+chatRoomList.size(),Toast.LENGTH_SHORT).show();
 
+>>>>>>> master
             }
         });
     }
@@ -78,6 +82,6 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
 
     @Override
     public void deleteChat(ChatRoom chatRoom) {
-        getmAppModel().deleteChatMessage(chatRoom);
+        AlertDialogBuilder.showDialog(this,getmAppModel(),chatRoom);
     }
 }

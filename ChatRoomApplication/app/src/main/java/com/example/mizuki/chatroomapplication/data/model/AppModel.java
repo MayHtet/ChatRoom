@@ -2,8 +2,8 @@ package com.example.mizuki.chatroomapplication.data.model;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import com.example.mizuki.chatroomapplication.data.vos.ChatRoom;
+<<<<<<< HEAD
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 
@@ -20,7 +20,12 @@ import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> master
 
+>>>>>>> master
 import com.example.mizuki.chatroomapplication.delegate.ChatListCallBack;
 import com.example.mizuki.chatroomapplication.utils.NetworkConstant;
 import com.google.firebase.database.DataSnapshot;
@@ -76,7 +81,7 @@ public class AppModel extends AndroidViewModel {
         getChildDBR().child(chatRoom.getCreatetime()).setValue(newChatRoom);
     }
 
-public DatabaseReference getChildDBR(){
+  DatabaseReference getChildDBR(){
 
     DatabaseReference chatDBR = FirebaseDatabase.getInstance().getReference();
     DatabaseReference chatChildDBR  = chatDBR.child(NetworkConstant.CHAT_MESSAGE);
