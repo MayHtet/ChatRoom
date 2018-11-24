@@ -3,9 +3,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.mizuki.chatroomapplication.R;
@@ -30,14 +32,23 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
     EditText etMessage;
     @BindView(R.id.btn_send)
     Button btnSend;
+    @BindView(R.id.progressbar)
+    ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        progressBar.setVisibility(View.VISIBLE);
         getmAppModel().startLoadingChatList(new ChatListCallBack() {
             @Override
             public void loadChatList(List<ChatRoom> chatRoomList) {
                 setupRecyclerView(chatRoomList);
 
+<<<<<<< HEAD
+=======
+                progressBar.setVisibility(View.GONE);
+>>>>>>> master
             }
         });
     }
