@@ -44,13 +44,10 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
             @Override
             public void loadChatList(List<ChatRoom> chatRoomList) {
                 setupRecyclerView(chatRoomList);
-<<<<<<< HEAD
                 //Toast.makeText(MainActivity.this,"Size is "+chatRoomList.size(),Toast.LENGTH_SHORT).show();
-=======
 
 
                 progressBar.setVisibility(View.GONE);
->>>>>>> master
             }
         });
     }
