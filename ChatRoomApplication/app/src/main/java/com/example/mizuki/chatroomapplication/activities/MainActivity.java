@@ -43,8 +43,8 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
         getmAppModel().startLoadingChatList(new ChatListCallBack() {
             @Override
             public void loadChatList(List<ChatRoom> chatRoomList) {
-                setupRecyclerView(chatRoomList);
 
+                setupRecyclerView(chatRoomList);
 
                 progressBar.setVisibility(View.GONE);
             }
@@ -72,7 +72,9 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
         rvChatRoom.setLayoutManager(new LinearLayoutManager(this));
         rvChatRoom.setAdapter(chatRecyclerAdapter);
         chatRecyclerAdapter.setmDataList(chatList);
+
     }
+
 
     @Override
     protected boolean setDisplayHomeEnabled() {
