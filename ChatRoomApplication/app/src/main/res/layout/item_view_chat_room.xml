@@ -19,13 +19,15 @@
             android:id="@+id/tv_message"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_message"
             android:layout_margin="@dimen/margin_eight"
             android:textSize="@dimen/text_size"
             android:background="@drawable/bg_tv_message"
             />
+<<<<<<< HEAD
             android:background="@drawable/bg_tv_message"
             android:textSize="@dimen/text_size"
             />
+=======
+>>>>>>> master
 
 </LinearLayout>
