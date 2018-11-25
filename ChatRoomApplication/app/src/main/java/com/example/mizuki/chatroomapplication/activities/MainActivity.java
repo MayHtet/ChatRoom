@@ -43,10 +43,18 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
         getmAppModel().startLoadingChatList(new ChatListCallBack() {
             @Override
             public void loadChatList(List<ChatRoom> chatRoomList) {
+<<<<<<< HEAD
+=======
+                setupRecyclerView(chatRoomList);
+<<<<<<< HEAD
+                //Toast.makeText(MainActivity.this,"Size is "+chatRoomList.size(),Toast.LENGTH_SHORT).show();
+=======
+>>>>>>> master
 
                 setupRecyclerView(chatRoomList);
 
                 progressBar.setVisibility(View.GONE);
+>>>>>>> master
             }
         });
     }
