@@ -45,10 +45,8 @@ public class MainActivity extends BaseActivity implements ChatDeleteCallback{
             public void loadChatList(List<ChatRoom> chatRoomList) {
                 setupRecyclerView(chatRoomList);
 
-<<<<<<< HEAD
-=======
+
                 progressBar.setVisibility(View.GONE);
->>>>>>> master
             }
         });
     }
